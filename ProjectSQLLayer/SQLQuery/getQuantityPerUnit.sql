@@ -37,7 +37,7 @@ BEGIN
 
  -- select * from #QuantityPerUnit
  select ContentType
-       ,COUNT(*) as Unit
+       ,COUNT(ContentType) as Unit
  from #QuantityPerUnit
  group by ContentType
 
